@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zerodha: Online brokerage platform for stock trading &amp; investing</title>
+  <meta name="description" content="Online stock brokerage platform for trading and investing in stocks, futures, options, commodities, currency, ETFs, mutual funds, and bonds.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zerodha Clone</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1f2933; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      z-index: 10;
+    }
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #1a73e8;
+    }
+    .nav-right {
+      display: flex;
+      gap: 20px;
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+    .nav-right a:hover { color: #1a73e8; }
+
+    /* Hero */
+    .hero {
+      max-width: 1100px;
+      margin: 40px auto 60px;
+      padding: 0 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+    .hero-text {
+      flex: 1 1 280px;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: #4b5563;
+      margin-bottom: 24px;
+      max-width: 420px;
+    }
+    .hero-btn {
+      background: #387ed1;
+      border: none;
+      color: #ffffff;
+      padding: 12px 28px;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .hero-btn:hover { background: #2f6cb5; }
+    .hero-graphic {
+      flex: 1 1 280px;
+      background: linear-gradient(135deg, #e5f0ff, #f5f7ff);
+      border-radius: 8px;
+      min-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #387ed1;
+      font-weight: 600;
+    }
+
+    /* Section wrapper */
+    .section {
+      max-width: 1100px;
+      margin: 0 auto 60px;
+      padding: 0 16px;
+    }
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 24px;
+    }
+
+    /* Trust section */
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .trust-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .trust-item p {
+      font-size: 0.95rem;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+
+    /* Pricing */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .price-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .price-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .price-card p {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    /* Education */
+    .edu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .edu-card {
+      border-radius: 8px;
+      padding: 20px;
+      background: #f9fafb;
+    }
+    .edu-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+      color: #387ed1;
+    }
+    .edu-card p {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 20px 16px 30px;
+      font-size: 0.85rem;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="nav">
+      <div class="nav-left">
+        <span>Zerodha</span>
+      </div>
+      <div class="nav-right">
+        <a href="#">Signup</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">Support</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+        <img src="landing.png"alt="">
+      <h1>Invest in everything</h1>
+    <p class="landing-subheading text-center">
+    Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.
+        </p>
+      <button class="hero-btn">Sign up for free</button>
+
+    </div>
+    <div class="hero-graphic">
+      <img src="pic.png" alt="trust">
+    </div>
+  </section>
+
+  <!-- Trust with confidence -->
+  <section class="section">
+    <h2>Trust with confidence</h2>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <h3>Customer-first always</h3>
+        <p>1.6+ crore customers trust us with ~ ₹6 lakh crores of equity investments, making us India’s largest broker.</p>
+      </div>
+      <div class="trust-item">
+        <h3>No spam or gimmicks</h3>
+        <p>No gimmicks, spam, or annoying push notifications. Just high quality apps you use at your pace.</p>
+      </div>
+      <div class="trust-item">
+        <h3>The Zerodha universe</h3>
+        <p>Not just an app, but an entire ecosystem with 30+ fintech partners to offer tailored services.</p>
+      </div>
+      <div class="trust-item">
+        <h3>Do better with money</h3>
+        <p>With initiatives like nudges and kill switches, we actively help you make better financial decisions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section">
+    <h2>Unbeatable pricing</h2>
+    <img src="Screenshot 2026-02-24 154904.png" alt="unbreakable">
+    <p style="color:#4b5563; margin-bottom:20px;">
+      Discount broking and transparent pricing with flat fees and no hidden charges.
+    </p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Free account opening</h3>
+        <p>No charges for opening your trading and demat account.</p>
+      </div>
+      <div class="price-card">
+        <h3>Free equity delivery</h3>
+        <p>Zero brokerage on equity delivery and direct mutual funds.</p>
+      </div>
+      <div class="price-card">
+        <h3>Intraday & F&O</h3>
+        <p>Flat fee per executed order on intraday trades and F&O.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <h2>Free and open market education</h2>
+    <img src="Screenshot 2026-02-24 184552.png" alt="market">
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h3>Varsity</h3>
+        <p>A comprehensive stock market education resource, from basics to advanced trading concepts.</p>
+      </div>
+      <div class="edu-card">
+        <h3>TradingQ&amp;A</h3>
+        <p>An active community for all your trading and investment questions.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>For learning purposes only. This is a Zerodha homepage style clone.</p>
+  </footer>
+</body>
+</html>
